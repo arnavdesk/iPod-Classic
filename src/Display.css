@@ -1,0 +1,42 @@
+.screen{
+    background-image: url("/static/bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1.5px solid black;
+}
+
+.menu {
+    background-color: white;
+    height: 200px;
+    width: 135px;
+}
+
+h3{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    padding: 0px;
+    list-style: none;
+}
+
+li{
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
+.active{
+    padding: 10px 10px;
+    background-color: rgb(55, 150, 220);
+    color: white;
+}
+
+.active::after{
+    content: ">";
+    margin-left: 40px;
+}

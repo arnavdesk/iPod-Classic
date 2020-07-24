@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Case from './Case.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      active: 2,
+    }
+  }
+
+  updateActiveMenu = (direction)=>{
+    if(direction ===1){
+      if(this.state.active===4){
+        this.setState({active:1})
+      }else{
+        this.setState({active:this.state.active+1})
+      }
+    }
+  }
+
+
+  render() {
+    const {active} = this.state;
+    return (
+      <div className="App">
+        <Case active={active}  updateActiveMenu={this.updateActiveMenu} />
+      </div>
+    );
+  }
 }
 
 export default App;
