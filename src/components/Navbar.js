@@ -19,7 +19,7 @@ class Navbar extends React.Component {
     }
 
     render() {
-        const {time}= this.state();
+        const {time}= this.state;
         return (
             <div className="bar">
                 <h5>iPod <i className="fas fa-wifi"></i></h5>
