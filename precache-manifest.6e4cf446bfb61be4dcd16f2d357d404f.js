@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0113524ddabd2f82b5aaf23fecd88dd8",
+    "revision": "6977d29a843280f7ce154a1abba306ab",
     "url": "/iPod-Classic/index.html"
   },
   {
