@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/iPod-Classic/static/css/main.ae8589cd.chunk.css",
+    "main.css": "/iPod-Classic/static/css/main.ae5f2128.chunk.css",
     "main.js": "/iPod-Classic/static/js/main.0d823f20.chunk.js",
     "main.js.map": "/iPod-Classic/static/js/main.0d823f20.chunk.js.map",
     "runtime-main.js": "/iPod-Classic/static/js/runtime-main.6904ec8c.js",
@@ -8,15 +8,16 @@
     "static/js/2.0c916079.chunk.js": "/iPod-Classic/static/js/2.0c916079.chunk.js",
     "static/js/2.0c916079.chunk.js.map": "/iPod-Classic/static/js/2.0c916079.chunk.js.map",
     "index.html": "/iPod-Classic/index.html",
-    "precache-manifest.2bfb534200ec61250d46d373470392a8.js": "/iPod-Classic/precache-manifest.2bfb534200ec61250d46d373470392a8.js",
+    "precache-manifest.973897382fe94dd45a796cc9b6fca913.js": "/iPod-Classic/precache-manifest.973897382fe94dd45a796cc9b6fca913.js",
     "service-worker.js": "/iPod-Classic/service-worker.js",
-    "static/css/main.ae8589cd.chunk.css.map": "/iPod-Classic/static/css/main.ae8589cd.chunk.css.map",
-    "static/js/2.0c916079.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.0c916079.chunk.js.LICENSE.txt"
+    "static/css/main.ae5f2128.chunk.css.map": "/iPod-Classic/static/css/main.ae5f2128.chunk.css.map",
+    "static/js/2.0c916079.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.0c916079.chunk.js.LICENSE.txt",
+    "static/media/Display.css": "/iPod-Classic/static/media/bg-img.ab7c69c2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6904ec8c.js",
     "static/js/2.0c916079.chunk.js",
-    "static/css/main.ae8589cd.chunk.css",
+    "static/css/main.ae5f2128.chunk.css",
     "static/js/main.0d823f20.chunk.js"
   ]
 }
