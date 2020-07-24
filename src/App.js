@@ -18,6 +18,12 @@ class App extends React.Component {
       }else{
         this.setState({active:this.state.active+1})
       }
+    }else{
+      if(this.state.active===1){
+        this.setState({active:4})
+      }else{
+        this.setState({active:this.state.active-1})
+      }
     }
   }
 

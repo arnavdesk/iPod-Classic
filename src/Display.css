@@ -31,12 +31,13 @@ li{
 }
 
 .active{
-    padding: 10px 10px;
+    position: relative;
     background-color: rgb(55, 150, 220);
     color: white;
 }
 
 .active::after{
+    position: absolute;
     content: ">";
-    margin-left: 40px;
+    right: 2px;
 }

@@ -32,14 +32,21 @@ class Wheel extends React.Component {
 
     doSomething = (e) =>{ 
         const {updateActiveMenu} = this.props;
-        console.log(this.angle);
         if(e.detail.distanceFromOrigin===0){
             this.angle = e.detail.angle;
         }
 
-        if(Math.abs(this.angle - e.detail.angle)>15){
+        if(Math.abs(this.angle - e.detail.angle)>25){
             this.angle = e.detail.angle;
-            updateActiveMenu(1);
+            if(e.detail.distanceFromLast===0){
+                return;
+            }
+            if(e.detail.distanceFromLast>0){
+                updateActiveMenu(1);
+            }else{
+                updateActiveMenu(0);
+            }
+            
         }
     }
 
