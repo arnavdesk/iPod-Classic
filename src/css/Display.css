@@ -1,15 +1,16 @@
 .screen{
-    background-image: url("/static/bg-img.jpg");
+    background-image: url("../static/bg-img.jpg");
     background-size: cover;
     background-position: center;
     width: 270px;
     height: 200px;
     margin-top: 20px;
     border: 1.5px solid black;
+    padding:3px;
 }
 
 .menu {
-    background-color: white;
+    background-color: #E3F2FD;
     height: 200px;
     width: 135px;
 }
@@ -26,11 +27,11 @@ ul{
 }
 
 li{
-    margin: 0px 10px;
     padding: 10px 0px;
 }
 
 .active{
+    padding-left: 5px;
     position: relative;
     background-color: rgb(55, 150, 220);
     color: white;

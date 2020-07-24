@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Case.css"
+import "../css/Case.css"
 import Wheel from './Wheel.js'
 import Display from './Display.js'
 

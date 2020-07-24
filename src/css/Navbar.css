@@ -1,0 +1,23 @@
+.bar{
+    display: flex;
+    width: 270px;
+    height: 20px;
+    background-color: #E3F2FD;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+
+h5{
+    margin: 1px 5px;
+    padding: 0px;
+}
+
+h3{
+   margin: 0px;
+   padding: 0px; 
+}
+
+.battery{
+    width: 30px;
+    height: 20px;
+}

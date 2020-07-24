@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Wheel.css"
+import "../css/Wheel.css"
 import ZingTouch from 'zingtouch';
 class Wheel extends React.Component {
     constructor(){
@@ -35,13 +35,23 @@ class Wheel extends React.Component {
         if(e.detail.distanceFromOrigin===0){
             this.angle = e.detail.angle;
         }
-
-        if(Math.abs(this.angle - e.detail.angle)>25){
-            this.angle = e.detail.angle;
+        if(Math.abs(this.angle - e.detail.angle)>300){
+            this.angle = Math.abs(e.detail.angle);
             if(e.detail.distanceFromLast===0){
                 return;
             }
-            if(e.detail.distanceFromLast>0){
+            else if(e.detail.distanceFromLast<0){
+                updateActiveMenu(1);
+            }else{
+                updateActiveMenu(0);
+            }
+            
+        }else if(Math.abs(this.angle - e.detail.angle)>15){
+            this.angle = Math.abs(e.detail.angle);
+            if(e.detail.distanceFromLast===0){
+                return;
+            }
+            else if(e.detail.distanceFromLast>0){
                 updateActiveMenu(1);
             }else{
                 updateActiveMenu(0);
