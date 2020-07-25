@@ -1,44 +1,21 @@
-.screen{
+.display{
     background-image: url("../static/bg-img.jpg");
     background-size: cover;
     background-position: center;
     width: 270px;
-    height: 200px;
-    margin-top: 20px;
+    height: 210px;
+    margin-top: 25px;
     border: 1.5px solid black;
     padding:3px;
+    display: flex;
+    flex-direction: column;
 }
 
-.menu {
-    background-color: #E3F2FD;
+.blank-div{
+    width: 270px;
     height: 200px;
-    width: 135px;
-}
-
-h3{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-ul{
-    padding: 0px;
-    list-style: none;
-}
-
-li{
-    padding: 10px 0px;
-}
-
-.active{
-    padding-left: 5px;
-    position: relative;
-    background-color: rgb(55, 150, 220);
-    color: white;
-}
-
-.active::after{
-    position: absolute;
-    content: ">";
-    right: 2px;
+    background-color: #E3F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -8,6 +8,7 @@
 }
 
 .wheel{
+    cursor: pointer;
     position: relative;
     width: 200px;
     height: 200px;
@@ -18,7 +19,6 @@
 .controll{
     color: white;
     position: absolute;
-    user-select: none;
 }
 
 #menu{

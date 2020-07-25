@@ -1,22 +1,19 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Menu from '../components/Menu';
 import "../css/Display.css"
 
 class Display extends React.Component {
     render() {
-        const {active} = this.props;
+        const { active , currentMenu } = this.props;
         return (
-            <div className="screen">
-                <div className="menu">
-                    <Navbar/>
-                    <ul>
-                        {active===1?<li className="active">&nbsp;Cover Flow</li>:<li>&nbsp;Cover Flow</li>}
-                        {active===2?<li className="active">&nbsp;Music</li>:<li>&nbsp;Music</li>}
-                        {active===3?<li className="active">&nbsp;Games</li>:<li>&nbsp;Games</li>}
-                        {active===4?<li className="active">&nbsp;Settings</li>:<li>&nbsp;Settings</li>}
-                    </ul>
-                </div>
-
+            <div className="display">
+                <Navbar/>
+                {currentMenu===0&&<Menu active={active}/>}
+                {currentMenu===1&&<div className="blank-div"><h1> Cover Flow </h1> </div>}
+                {currentMenu===2&&<div className="blank-div"><h1>Music</h1> </div>}
+                {currentMenu===3&&<div className="blank-div"><h1>Games</h1></div>}
+                {currentMenu===4&&<div className="blank-div"><h1>Settings</h1></div>}
             </div>
         )
     }

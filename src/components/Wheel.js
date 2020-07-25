@@ -7,11 +7,12 @@ class Wheel extends React.Component {
         this.angle = 0;
     }
     render() {
+        const {changeMenu,active} = this.props;
         return (
             <div className="wheel-container" id="wheel-container">
                 <div className="wheel" id="wheel" >
                     <div className="controll" id="menu">
-                        MENU
+                        <div onClick={()=>{changeMenu(0)}}>MENU</div>
                     </div>
                     <div className="controll" id="forward">
                         <i className="fas fa-fast-forward"></i>
@@ -25,13 +26,16 @@ class Wheel extends React.Component {
                     </div>
                 </div>
 
-                <div className="blank" id="blank"></div>
+                <div className="blank" id="blank" onClick={()=>{changeMenu(active)}}></div>
             </div>
         )
     }
 
-    doSomething = (e) =>{ 
-        const {updateActiveMenu} = this.props;
+    wheelControll = (e) =>{ 
+        const {updateActiveMenu, currentMenu} = this.props;
+        if(currentMenu!==0){
+            return;
+        }
         if(e.detail.distanceFromOrigin===0){
             this.angle = e.detail.angle;
         }
@@ -61,12 +65,17 @@ class Wheel extends React.Component {
     }
 
     componentDidMount() {
-        var doSomething = this.doSomething;
+        const{changeMenu}=this.props;
+        const wheelControll = this.wheelControll;
         const wheel = document.getElementById("wheel");
         const activeRegion = ZingTouch.Region(wheel);
+        const menuIcon = document.getElementById("menu");
 
+        activeRegion.bind(menuIcon, 'tap', function (e) {
+            changeMenu(0);
+        });
         activeRegion.bind(wheel, 'rotate', function (e) {
-            doSomething(e);
+            wheelControll(e);
         });
 
         

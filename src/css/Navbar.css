@@ -7,17 +7,19 @@
     justify-content: space-between;
 }
 
-h5{
+.heading{
     margin: 1px 5px;
     padding: 0px;
 }
 
-h3{
+.time{
    margin: 0px;
    padding: 0px; 
+   margin-right: 20px;
 }
 
 .battery{
-    width: 30px;
+    width: 22px;
     height: 20px;
+    margin-right: 3px;
 }
