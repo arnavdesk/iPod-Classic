@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/iPod-Classic/static/css/main.202c9bc4.chunk.css",
-    "main.js": "/iPod-Classic/static/js/main.a66c1f0f.chunk.js",
-    "main.js.map": "/iPod-Classic/static/js/main.a66c1f0f.chunk.js.map",
+    "main.css": "/iPod-Classic/static/css/main.13410341.chunk.css",
+    "main.js": "/iPod-Classic/static/js/main.1955ffde.chunk.js",
+    "main.js.map": "/iPod-Classic/static/js/main.1955ffde.chunk.js.map",
     "runtime-main.js": "/iPod-Classic/static/js/runtime-main.6904ec8c.js",
     "runtime-main.js.map": "/iPod-Classic/static/js/runtime-main.6904ec8c.js.map",
-    "static/js/2.0c916079.chunk.js": "/iPod-Classic/static/js/2.0c916079.chunk.js",
-    "static/js/2.0c916079.chunk.js.map": "/iPod-Classic/static/js/2.0c916079.chunk.js.map",
+    "static/js/2.e05c69e1.chunk.js": "/iPod-Classic/static/js/2.e05c69e1.chunk.js",
+    "static/js/2.e05c69e1.chunk.js.map": "/iPod-Classic/static/js/2.e05c69e1.chunk.js.map",
     "index.html": "/iPod-Classic/index.html",
-    "precache-manifest.883361892b25a42f19a1450334c4d082.js": "/iPod-Classic/precache-manifest.883361892b25a42f19a1450334c4d082.js",
+    "precache-manifest.09bd504ac0da2f9e8aaded797f0549c9.js": "/iPod-Classic/precache-manifest.09bd504ac0da2f9e8aaded797f0549c9.js",
     "service-worker.js": "/iPod-Classic/service-worker.js",
-    "static/css/main.202c9bc4.chunk.css.map": "/iPod-Classic/static/css/main.202c9bc4.chunk.css.map",
-    "static/js/2.0c916079.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.0c916079.chunk.js.LICENSE.txt",
-    "static/media/Display.css": "/iPod-Classic/static/media/bg-img.ab7c69c2.jpg"
+    "static/css/main.13410341.chunk.css.map": "/iPod-Classic/static/css/main.13410341.chunk.css.map",
+    "static/js/2.e05c69e1.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.e05c69e1.chunk.js.LICENSE.txt",
+    "static/media/Display.css": "/iPod-Classic/static/media/bg-img.ab7c69c2.jpg",
+    "static/media/game.jpg": "/iPod-Classic/static/media/game.33a35d52.jpg",
+    "static/media/ipod.jpg": "/iPod-Classic/static/media/ipod.ecb76505.jpg",
+    "static/media/music.jpg": "/iPod-Classic/static/media/music.27536903.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6904ec8c.js",
-    "static/js/2.0c916079.chunk.js",
-    "static/css/main.202c9bc4.chunk.css",
-    "static/js/main.a66c1f0f.chunk.js"
+    "static/js/2.e05c69e1.chunk.js",
+    "static/css/main.13410341.chunk.css",
+    "static/js/main.1955ffde.chunk.js"
   ]
 }
