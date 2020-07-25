@@ -22,7 +22,10 @@ class Navbar extends React.Component {
 
     getCurrentTime() {
         const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
+        var time = today.getHours() + ":" + today.getMinutes();
+        if(today.getMinutes()<10){
+            time = today.getHours() + ":0" + today.getMinutes();
+        }
         return time;
     }
 

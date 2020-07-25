@@ -7,12 +7,12 @@ class Wheel extends React.Component {
         this.angle = 0;
     }
     render() {
-        const {changeMenu,active} = this.props;
+        const {changeMenu,active,currentMenu} = this.props;
         return (
             <div className="wheel-container" id="wheel-container">
                 <div className="wheel" id="wheel" >
                     <div className="controll" id="menu">
-                        <div onClick={()=>{changeMenu(0)}}>MENU</div>
+                        <div onClick={()=>{changeMenu(-1)}}>MENU</div>
                     </div>
                     <div className="controll" id="forward">
                         <i className="fas fa-fast-forward"></i>
@@ -26,16 +26,14 @@ class Wheel extends React.Component {
                     </div>
                 </div>
 
-                <div className="blank" id="blank" onClick={()=>{changeMenu(active)}}></div>
+                <div className="blank" id="blank" onClick={()=>{changeMenu(active,currentMenu)}}></div>
             </div>
         )
     }
 
     wheelControll = (e) =>{ 
         const {updateActiveMenu, currentMenu} = this.props;
-        if(currentMenu!==0){
-            return;
-        }
+    
         if(e.detail.distanceFromOrigin===0){
             this.angle = e.detail.angle;
         }
@@ -45,9 +43,9 @@ class Wheel extends React.Component {
                 return;
             }
             else if(e.detail.distanceFromLast<0){
-                updateActiveMenu(1);
+                updateActiveMenu(1,currentMenu);
             }else{
-                updateActiveMenu(0);
+                updateActiveMenu(0,currentMenu);
             }
             
         }else if(Math.abs(this.angle - e.detail.angle)>15){
@@ -56,9 +54,9 @@ class Wheel extends React.Component {
                 return;
             }
             else if(e.detail.distanceFromLast>0){
-                updateActiveMenu(1);
+                updateActiveMenu(1,currentMenu);
             }else{
-                updateActiveMenu(0);
+                updateActiveMenu(0,currentMenu);
             }
             
         }
@@ -72,13 +70,11 @@ class Wheel extends React.Component {
         const menuIcon = document.getElementById("menu");
 
         activeRegion.bind(menuIcon, 'tap', function (e) {
-            changeMenu(0);
+            changeMenu(-1,-1);
         });
         activeRegion.bind(wheel, 'rotate', function (e) {
             wheelControll(e);
         });
-
-        
 
     }
 
