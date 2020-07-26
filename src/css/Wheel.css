@@ -26,6 +26,8 @@
     top: 11%;
     font-weight: 900;
     font-size: 18px;
+    width: 40px;
+    height: 20px;
 }
 
 #reverse{
@@ -43,6 +45,8 @@
 #play-pause{
     bottom: 11%;
     left: 44%;
+    width: 40px;
+    height: 20px;
 }
 
 .blank{

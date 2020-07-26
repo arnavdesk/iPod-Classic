@@ -1,14 +1,14 @@
 import React from 'react';
-import "../css/Music.css"
+import "../css/Songs.css"
 
-class Music extends React.Component {
+class Songs extends React.Component {
     render() {
-        const {musicItems,active} = this.props;
+        const {songItems,active} = this.props;
         return (
             <div className="music">
-                <h2>Music</h2>
+                <h2>Songs</h2>
                 <ul>
-                {musicItems.map((element, index)=>{
+                {songItems.map((element, index)=>{
                             return active===index?<li key={index} className="active">&nbsp;{element}</li>:<li key={index}>&nbsp;{element}</li>
                         })}
                 </ul>
@@ -20,4 +20,4 @@ class Music extends React.Component {
 }
 
 
-export default Music;
+export default Songs;
