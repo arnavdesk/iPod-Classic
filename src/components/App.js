@@ -73,7 +73,7 @@ class App extends React.Component {
         return;
       else{
         const prevId = navigationStack.pop();
-        this.setState({currentMenu:prevId,navigationStack:navigationStack});
+        this.setState({currentMenu:prevId,navigationStack:navigationStack,active:0});
         return;
       }
     }
@@ -82,8 +82,6 @@ class App extends React.Component {
       return;
     }
 
-
-    navigationStack.push(this.state.currentMenu);
 
     if(fromMenu===8){
       if(id==0){
@@ -98,6 +96,8 @@ class App extends React.Component {
       }
       return;
     }
+
+    navigationStack.push(this.state.currentMenu);
 
     if(fromMenu===4){
       const songUrl=this.state.songItemsUrl[id];
