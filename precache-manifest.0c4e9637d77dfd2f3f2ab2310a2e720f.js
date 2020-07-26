@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19c78d6d488a427b2d7b2be645c743b9",
+    "revision": "9be06adad3f8eb6072fa4586481d21b7",
     "url": "/iPod-Classic/index.html"
   },
   {
-    "revision": "e33038a1ede0eab25e2c",
-    "url": "/iPod-Classic/static/css/main.13410341.chunk.css"
+    "revision": "69703031f2eb3ebbf940",
+    "url": "/iPod-Classic/static/css/main.be19dc8e.chunk.css"
   },
   {
-    "revision": "03d864fd08c4dbc855ff",
-    "url": "/iPod-Classic/static/js/2.e05c69e1.chunk.js"
+    "revision": "f10b7b1d6703458415f4",
+    "url": "/iPod-Classic/static/js/2.75c71c87.chunk.js"
   },
   {
     "revision": "3b6069e01f0db714f9e787b4dbe9775c",
-    "url": "/iPod-Classic/static/js/2.e05c69e1.chunk.js.LICENSE.txt"
+    "url": "/iPod-Classic/static/js/2.75c71c87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e33038a1ede0eab25e2c",
-    "url": "/iPod-Classic/static/js/main.1955ffde.chunk.js"
+    "revision": "69703031f2eb3ebbf940",
+    "url": "/iPod-Classic/static/js/main.d3bb839a.chunk.js"
   },
   {
     "revision": "4deacc06a44225f75abb",
     "url": "/iPod-Classic/static/js/runtime-main.6904ec8c.js"
+  },
+  {
+    "revision": "f58a59fabd76a1dfe6ee9f67879ef19c",
+    "url": "/iPod-Classic/static/media/Laung Gwacha.f58a59fa.mp3"
+  },
+  {
+    "revision": "42cb592fe70552deba360bc6b8554101",
+    "url": "/iPod-Classic/static/media/Shape of you.42cb592f.mp3"
   },
   {
     "revision": "ab7c69c2c47e3cbd52c55486514eb1d3",
