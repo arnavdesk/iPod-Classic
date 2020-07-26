@@ -10,7 +10,7 @@ class Case extends React.Component {
             <div className="case-container">
                 <div style={{backgroundColor:theme}} className="case">
                     <Display songIndex={songIndex} playing={playing} setActiveOnMount={setActiveOnMount} active={active} musicItems={musicItems} menuItems={menuItems} currentMenu={currentMenu} songItems={songItems} />
-                    <Wheel active={active} menuItems={menuItems} currentMenu={currentMenu} changeMenu={changeMenu} updateActiveMenu={updateActiveMenu} togglePlayPause={togglePlayPause}/>
+                    <Wheel theme={theme} active={active} menuItems={menuItems} currentMenu={currentMenu} changeMenu={changeMenu} updateActiveMenu={updateActiveMenu} togglePlayPause={togglePlayPause}/>
                 </div>
             </div>
         )

@@ -7,7 +7,7 @@ class Wheel extends React.Component {
         this.angle = 0;
     }
     render() {
-        const { changeMenu, active, currentMenu, togglePlayPause } = this.props;
+        const { changeMenu, active, currentMenu, togglePlayPause, theme } = this.props;
         return (
             <div className="wheel-container" id="wheel-container">
                 <div className="wheel" id="wheel" >
@@ -28,7 +28,7 @@ class Wheel extends React.Component {
                     </div>
                 </div>
 
-                <div className="blank" id="blank" onClick={() => { changeMenu(active, currentMenu) }}></div>
+                <div style={{backgroundColor:theme}} className="blank" id="blank" onClick={() => { changeMenu(active, currentMenu) }}></div>
             </div>
         )
     }
