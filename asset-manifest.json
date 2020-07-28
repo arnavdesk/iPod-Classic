@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/iPod-Classic/static/css/main.b5bba9b1.chunk.css",
-    "main.js": "/iPod-Classic/static/js/main.3857b2b0.chunk.js",
-    "main.js.map": "/iPod-Classic/static/js/main.3857b2b0.chunk.js.map",
+    "main.css": "/iPod-Classic/static/css/main.368cc329.chunk.css",
+    "main.js": "/iPod-Classic/static/js/main.01b87949.chunk.js",
+    "main.js.map": "/iPod-Classic/static/js/main.01b87949.chunk.js.map",
     "runtime-main.js": "/iPod-Classic/static/js/runtime-main.6904ec8c.js",
     "runtime-main.js.map": "/iPod-Classic/static/js/runtime-main.6904ec8c.js.map",
-    "static/js/2.75c71c87.chunk.js": "/iPod-Classic/static/js/2.75c71c87.chunk.js",
-    "static/js/2.75c71c87.chunk.js.map": "/iPod-Classic/static/js/2.75c71c87.chunk.js.map",
+    "static/js/2.8e7397b8.chunk.js": "/iPod-Classic/static/js/2.8e7397b8.chunk.js",
+    "static/js/2.8e7397b8.chunk.js.map": "/iPod-Classic/static/js/2.8e7397b8.chunk.js.map",
     "index.html": "/iPod-Classic/index.html",
-    "precache-manifest.fa9e51649f5694d3256c565c78aa4da9.js": "/iPod-Classic/precache-manifest.fa9e51649f5694d3256c565c78aa4da9.js",
+    "precache-manifest.e8d584d7034c2a7a590c0cf98b3a475d.js": "/iPod-Classic/precache-manifest.e8d584d7034c2a7a590c0cf98b3a475d.js",
     "service-worker.js": "/iPod-Classic/service-worker.js",
-    "static/css/main.b5bba9b1.chunk.css.map": "/iPod-Classic/static/css/main.b5bba9b1.chunk.css.map",
-    "static/js/2.75c71c87.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.75c71c87.chunk.js.LICENSE.txt",
+    "static/css/main.368cc329.chunk.css.map": "/iPod-Classic/static/css/main.368cc329.chunk.css.map",
+    "static/js/2.8e7397b8.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.8e7397b8.chunk.js.LICENSE.txt",
     "static/media/Laung Gwacha.mp3": "/iPod-Classic/static/media/Laung Gwacha.f58a59fa.mp3",
     "static/media/Shape of you.mp3": "/iPod-Classic/static/media/Shape of you.42cb592f.mp3",
     "static/media/Display.css": "/iPod-Classic/static/media/bg-img.ab7c69c2.jpg",
-    "static/media/game.jpg": "/iPod-Classic/static/media/game.33a35d52.jpg",
-    "static/media/ipod.jpg": "/iPod-Classic/static/media/ipod.ecb76505.jpg",
-    "static/media/music.jpg": "/iPod-Classic/static/media/music.27536903.jpg"
+    "static/media/game.jpg": "/iPod-Classic/static/media/game.ec42ead0.jpg",
+    "static/media/ipod.jpg": "/iPod-Classic/static/media/ipod.48a8ec7b.jpg",
+    "static/media/laung_gwacha.jpg": "/iPod-Classic/static/media/laung_gwacha.a4fb5517.jpg",
+    "static/media/settings.png": "/iPod-Classic/static/media/settings.5d8a2383.png",
+    "static/media/shape_of_you.png": "/iPod-Classic/static/media/shape_of_you.220ba5c7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6904ec8c.js",
-    "static/js/2.75c71c87.chunk.js",
-    "static/css/main.b5bba9b1.chunk.css",
-    "static/js/main.3857b2b0.chunk.js"
+    "static/js/2.8e7397b8.chunk.js",
+    "static/css/main.368cc329.chunk.css",
+    "static/js/main.01b87949.chunk.js"
   ]
 }
