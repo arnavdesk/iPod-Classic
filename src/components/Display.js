@@ -7,6 +7,7 @@ import Settings from '../components/Settings';
 import Playing from '../components/Playing';
 import "../css/Display.css"
 import Themes from './Themes';
+import WheelColor from './WheelColor';
 
 class Display extends React.Component {
     render() {
@@ -23,6 +24,7 @@ class Display extends React.Component {
                 {currentMenu === 6 && <div className="blank-div"><h1>Albums</h1></div>}
                 {(currentMenu === 0 ||currentMenu===7) && <Playing songImgUrl={songImgUrl} audio={audio} songUrl={songUrl} playing={playing} songIndex={songIndex} songItems={songItems} />}
                 {currentMenu===8&&<Themes active={active}/>}
+                {currentMenu===9&&<WheelColor active={active}/>}
             </div>
         )
     }

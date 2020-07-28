@@ -19,8 +19,8 @@ class App extends React.Component {
       songImgItemsUrl:[song1Img,song2Img],
       songItems: ["Shape of You","Laung Gwacha"],
       songIndex: 0,
-      lengthMenuKey: { "-1": 3, 1: 2, 4: 1, 8: 3, 3: 0 },
-      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8] },
+      lengthMenuKey: { "-1": 3, 1: 2, 4: 1, 8: 4, 3: 1, 9:3 },
+      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8,9] },
       currentMenu: -1,
       navigationStack: [],
       songUrl: song1,
@@ -28,6 +28,7 @@ class App extends React.Component {
       theme: "rgb(210, 210, 210)", 
       audio: new Audio(song1),
       songImgUrl:song1Img,
+      wheelColor:"white"
     }
   }
 
@@ -92,7 +93,7 @@ class App extends React.Component {
 
   updateActiveMenu = (direction, menu) => {
 
-    if (menu != -1 && menu != 1 && menu != 4 && menu != 8 && menu != 3) {
+    if (menu != -1 && menu != 1 && menu != 4 && menu != 8 && menu != 3&&menu!=9) {
       return;
     }
     let min = 0;
@@ -129,21 +130,37 @@ class App extends React.Component {
       }
     }
 
-    if (fromMenu != "-1" && fromMenu != "1" && fromMenu != 4 && fromMenu != 3 && fromMenu != 8) {
+    if (fromMenu != "-1" && fromMenu != "1" && fromMenu != 4 && fromMenu != 3 && fromMenu != 8 &&fromMenu!=9) {
       return;
     }
 
 
     if (fromMenu === 8) {
-      if (id == 0) {
+      if (id === 0) {
         this.setState({ theme: "#FDDCD7" });
       }
-      else if (id == 1) {
+      else if (id === 1) {
         this.setState({ theme: "rgb(210, 210, 210)" });
-      } else if (id == 2) {
+      } else if (id === 2) {
         this.setState({ theme: "#F5DDC5" });
       } else if (id == 3) {
         this.setState({ theme: "#D1CDDA" })
+      } else if (id == 4) {
+        this.setState({ theme: "black" })
+      }
+      return;
+    }
+
+    if (fromMenu === 9) {
+      if (id === 0) {
+        this.setState({ wheelColor: "Black" });
+      }
+      else if (id === 1) {
+        this.setState({ wheelColor: "white" });
+      } else if (id === 2) {
+        this.setState({ wheelColor: "#616161" });
+      } else if (id === 3) {
+        this.setState({ wheelColor: "#3D5AFE" })
       }
       return;
     }
@@ -170,10 +187,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { audio, active, currentMenu, menuItems, musicItems, songItems, playing, songIndex, theme, songUrl, songImgUrl } = this.state;
+    const { audio, active, currentMenu, menuItems, musicItems, songItems, playing, songIndex, theme, songUrl, songImgUrl, wheelColor } = this.state;
     return (
       <div className="App">
-        <Case songIndex={songIndex} active={active} menuItems={menuItems} musicItems={musicItems} currentMenu={currentMenu} changeMenu={this.changeMenu} setActiveOnMount={this.setActiveOnMount} updateActiveMenu={this.updateActiveMenu} togglePlayPause={this.togglePlayPause} songItems={songItems} playing={playing} theme={theme} audio={audio} songUrl={songUrl} songImgUrl={songImgUrl} seekSongForward={this.seekSongForward} seekSongReverse={this.seekSongReverse} />
+        <Case songIndex={songIndex} active={active} menuItems={menuItems} musicItems={musicItems} currentMenu={currentMenu} changeMenu={this.changeMenu} setActiveOnMount={this.setActiveOnMount} updateActiveMenu={this.updateActiveMenu} togglePlayPause={this.togglePlayPause} songItems={songItems} playing={playing} theme={theme} audio={audio} songUrl={songUrl} songImgUrl={songImgUrl} seekSongForward={this.seekSongForward} seekSongReverse={this.seekSongReverse} wheelColor={wheelColor} />
       </div>
     );
   }

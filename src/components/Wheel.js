@@ -7,10 +7,10 @@ class Wheel extends React.Component {
         this.angle = 0;
     }
     render() {
-        const { changeMenu, active, currentMenu, theme } = this.props;
+        const { changeMenu, active, currentMenu, theme,wheelColor } = this.props;
         return (
             <div className="wheel-container" id="wheel-container">
-                <div className="wheel" id="wheel" >
+                <div style={{backgroundColor:wheelColor}} className="wheel" id="wheel" >
                     <div className="controll" id="menu">
                         <div style={{color:theme}}>MENU</div>
                     </div>
