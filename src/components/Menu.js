@@ -6,7 +6,7 @@ import settings from "../static/settings.png"
 import ipod from "../static/ipod.jpg"
 class Menu extends React.Component {
     render() {
-        const { active,menuItems} = this.props;
+        const { active,menuItems, songImgUrl} = this.props;
         return (
 
             <div className="menu-container">
@@ -18,7 +18,7 @@ class Menu extends React.Component {
                     </ul>
                 </div>
                 <div className="leaf">
-                    {active === 0 && <img className="leaf-img" src={ipod}></img>}
+                    {active === 0 && <img className="leaf-img" src={songImgUrl}></img>}
                     {active === 1 && <img className="leaf-img" src={music}></img>}
                     {active === 2 && <img className="leaf-img" src={game}></img>}
                     {active === 3 && <img className="leaf-img" src={settings}></img>}

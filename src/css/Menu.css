@@ -6,14 +6,14 @@
 .menu{
     background-color: #E3F2FD;
     height: 190px;
-    width: 120px;
+    width: 135px;
 }
 
 .leaf{
     border-left: 1px solid black;
     background-color: #E3F2FD;
     height: 190px;
-    width: 150px;
+    width: 135px;
 }
 
 h3{
@@ -46,6 +46,7 @@ li{
 }
 
 .leaf-img{
-    height: 190px;
-    width: 150px;
+    border: 2px solid black;
+    height: 188px;
+    width: 135px;
 }

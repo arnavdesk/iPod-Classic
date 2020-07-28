@@ -4,7 +4,6 @@
     height: 20px;
     background-color: #E3F2FD;
     border-bottom: 1px solid black;
-    justify-content: space-between;
 }
 
 .heading{
@@ -15,11 +14,24 @@
 .time{
    margin: 0px;
    padding: 0px; 
-   margin-right: 20px;
+   margin: auto;
 }
 
 .battery{
     width: 22px;
     height: 20px;
-    margin-right: 3px;
+}
+
+.right-container-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.play-pause-nav{
+    font-size: 15px;
+    margin: 0px;
+    margin-right: 8px;
+    padding: 0px;
+    text-align: center;
+    color: #039BE5;
 }

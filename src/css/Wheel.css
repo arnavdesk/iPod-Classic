@@ -12,12 +12,13 @@
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: black;   
+    background-color: white;   
     border-radius: 50%;
 }
 
 .controll{
-    color: white;
+    color: rgb(210, 210, 210);
+    font-weight: 900;
     position: absolute;
 }
 
