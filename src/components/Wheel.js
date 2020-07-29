@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Wheel.css"
 import ZingTouch from 'zingtouch';
+// Render wheel
 class Wheel extends React.Component {
     constructor() {
         super();
@@ -33,6 +34,7 @@ class Wheel extends React.Component {
         )
     }
 
+    // control the wheel roatation action if rotation is more than 15 degrees and also check direction of rotation
     wheelControll = (e) => {
         const { updateActiveMenu, currentMenu } = this.props;
 
@@ -64,6 +66,7 @@ class Wheel extends React.Component {
         }
     }
 
+    // Bind components with zingtouch logic
     componentDidMount() {
         const { changeMenuBackward ,togglePlayPause, seekSongForward, seekSongReverse} = this.props;
         const wheelControll = this.wheelControll;

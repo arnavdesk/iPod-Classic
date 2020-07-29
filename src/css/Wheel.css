@@ -1,3 +1,4 @@
+/* wheel container div */
 .wheel-container{
     position: relative;
     width: 200px;
@@ -7,6 +8,7 @@
     display: flex;
 }
 
+/* wheel with border radius 50% */
 .wheel{
     cursor: pointer;
     position: relative;
@@ -16,12 +18,14 @@
     border-radius: 50%;
 }
 
+/* all controls */
 .controll{
     color: rgb(210, 210, 210);
     font-weight: 900;
     position: absolute;
 }
 
+/* menu button */
 #menu{
     left: 38%;
     top: 11%;
@@ -31,18 +35,21 @@
     height: 20px;
 }
 
+/* reverse button */
 #reverse{
     left: 10%;
     top: 45%;
     font-size: 23px;
 }
 
+/* forward button */
 #forward{
     right: 10%;
     top: 45%;
     font-size: 23px;
 }
 
+/* play-pause button */
 #play-pause{
     bottom: 11%;
     left: 44%;
@@ -50,6 +57,7 @@
     height: 20px;
 }
 
+/* center button */
 .blank{
     width: 80px;
     height: 80px;

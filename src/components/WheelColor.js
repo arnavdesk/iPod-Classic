@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Themes.css"
 
+// Render wheel color change menu
 class WheelColor extends React.Component {
     render() {
         const {active} = this.props;

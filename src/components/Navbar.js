@@ -1,6 +1,8 @@
 import React from 'react';
 import "../css/Navbar.css"
 import BatImg from "../static/battery.png"
+
+// Renders navbar
 class Navbar extends React.Component {
     constructor() {
         super();
@@ -10,11 +12,14 @@ class Navbar extends React.Component {
         this.stateId = "";
     }
 
+    // if there is no notification then iPod logo, time and battery icon
+    // If there is a notification show it for 1 second and clear it
     componentDidMount() {
-        const { noty, setNoty} = this.props;
+        const { noty} = this.props;
         if (noty === true) {
             return;
         }
+        // set an interval of 60 seconds to update time
         this.stateId = setInterval(() => {
             this.setState({ time: this.getCurrentTime() });
         }, 60000);
@@ -29,12 +34,14 @@ class Navbar extends React.Component {
         }
     }
 
+    // Clear the update time interval
     componentWillUnmount() {
         const { noty } = this.props;
         if (noty !== true)
             clearInterval(this.stateId);
     }
 
+    // fir getting current time in string
     getCurrentTime() {
         const today = new Date();
         var time = today.getHours() + ":" + today.getMinutes();
@@ -44,6 +51,7 @@ class Navbar extends React.Component {
         return time;
     }
 
+    // Render navbar to show either ipod logo, time or Notification
     render() {
         const { time } = this.state;
         const { playing, noty , notifyText} = this.props;

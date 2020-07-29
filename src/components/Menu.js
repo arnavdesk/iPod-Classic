@@ -3,7 +3,8 @@ import "../css/Menu.css"
 import game from "../static/game.jpg"
 import music from "../static/music.jpg"
 import settings from "../static/settings.png"
-import ipod from "../static/ipod.jpg"
+
+// Renders main menu
 class Menu extends React.Component {
     render() {
         const { active,menuItems, songImgUrl} = this.props;

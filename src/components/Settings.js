@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Settings.css"
 
+ // Renders settings
 class Settings extends React.Component {
     render() {
         const {active} = this.props;

@@ -1,10 +1,16 @@
 import React from 'react';
+
+// import css file
 import '../css/App.css';
+// Import iPod body file
 import Case from './Case.js';
+// Import songs
 import song2 from "../static/songs/Laung Gwacha.mp3"
 import song1 from "../static/songs/Shape of you.mp3"
+// Import song cover images
 import song2Img from "../static/laung_gwacha.jpg";
 import song1Img from "../static/shape_of_you.png";
+// Import wallpapers
 import jupiterWallpaper from "../static/jupiter.png"
 import earthWallpaper from "../static/earth.jpg"
 import moonWallpaper from "../static/moon.jpg"
@@ -15,30 +21,31 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      active: 0,
-      menuItems: ["Now Playing", "Music", "Games", "Settings"],
-      musicItems: ["All Songs", "Artist", "Albums"],
-      songItemsUrl: [song1, song2],
-      songImgItemsUrl: [song1Img, song2Img],
-      wallpaperItems: [earthWallpaper, jupiterWallpaper, moonWallpaper],
-      songItems: ["Shape of You", "Laung Gwacha"],
-      songIndex: 0,
-      lengthMenuKey: { "-1": 3, 1: 2, 4: 1, 8: 4, 3: 2, 9: 3 ,10:2},
-      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8, 9, 10] },
-      currentMenu: -2,
-      navigationStack: [],
-      songUrl: song1,
-      playing: false,
-      theme: "rgb(210, 210, 210)",
-      audio: new Audio(song1),
-      songImgUrl: song1Img,
-      wheelColor: "white",
-      wallpaper: 0,
-      noty:false,
-      notifyText:"Wallpaper Changed",
+      active: 0,  //Active list item
+      menuItems: ["Now Playing", "Music", "Games", "Settings"], //menu Items
+      musicItems: ["All Songs", "Artist", "Albums"], //Items in music
+      songItemsUrl: [song1, song2],  //songs list
+      songImgItemsUrl: [song1Img, song2Img],  //song images list
+      wallpaperItems: [earthWallpaper, jupiterWallpaper, moonWallpaper], //wallpapers
+      songItems: ["Shape of You", "Laung Gwacha"], //song names
+      songIndex: 0, //current song
+      lengthMenuKey: { "-1": 3, 1: 2, 4: 1, 8: 4, 3: 2, 9: 3 ,10:2},  //length of a particular menu
+      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8, 9, 10] }, //which menu can be rendered by this menu
+      currentMenu: -2, //current menu which is lockscreen initially
+      navigationStack: [], //Used for navigation forward and backward
+      songUrl: song1, //current song url
+      playing: false, //playing or not
+      theme: "rgb(210, 210, 210)", //current body theme
+      audio: new Audio(song1), //current audio file
+      songImgUrl: song1Img, //current song img for now playing
+      wheelColor: "white", //current wheel color
+      wallpaper: 0, //current wallpaper
+      noty:false, // has to show notification or not
+      notifyText:"Wallpaper Changed", //notification text
     }
   }
 
+  // FUNCTION FOR : ON LONG PRESS OF FORWARD BUTTON TRACKS ARE SEEKED FORWARD
   seekSongForward = (e) => {
     if (this.state.currentMenu === -2) {
       return;
@@ -65,6 +72,7 @@ class App extends React.Component {
     }
   }
 
+  // FUNCTION FOR : ON LONG PRESS OF FORWARD BUTTON TRACKS ARE SEEKED BACKWARD
   seekSongReverse = (e) => {
     if (this.state.currentMenu === -2) {
       return;
@@ -92,6 +100,7 @@ class App extends React.Component {
     }
   }
 
+  // FUNCTION FOR : TOGGLE SONG PLAY AND PAUSE
   togglePlayPause = () => {
     if (this.state.currentMenu === -2) {
       return;
@@ -106,7 +115,7 @@ class App extends React.Component {
     }
   }
 
-
+  // FUNCTION FOR : UPDATE ACTIVE MENU WHILE ROTATING ON THE TRACK-WHEEL
   updateActiveMenu = (direction, menu) => {
 
     if (menu !== -1 && menu !== 1 && menu !== 4 && menu !== 8 && menu !== 3 && menu !== 9 && menu !== 10) {
@@ -133,6 +142,7 @@ class App extends React.Component {
   }
 
 
+  // FUNCTION FOR : CHANGE THE THEME OF iPod BODY
   setTheme = (id) => {
     let theme ="";
     if (id === 0) {
@@ -153,6 +163,7 @@ class App extends React.Component {
   }
 
 
+  // FUNCTION FOR : CHANGE COLOR OF WHEEL
   setWheelColor = (id) => {
     let wheelColor ="";
     if (id === 0) {
@@ -169,11 +180,13 @@ class App extends React.Component {
     return;
   }
 
+  // FUNCTION FOR : SET WALLPAPER OF iPod Body
   setWallpaper = (id) => {
     this.setState({ wallpaper: id , noty:true, notifyText:"Wallpaper Changed"});
     return;
   }
 
+  // FUNCTION FOR : CHANGE PLAYING MUSIC
   chagePlayingSongFromMusicMenu = (id, navigationStack) => {
     const songUrl = this.state.songItemsUrl[id];
     const songImgUrl = this.state.songImgItemsUrl[id];
@@ -184,6 +197,7 @@ class App extends React.Component {
     return;
   }
 
+  // FUNCTION FOR : CHANGE MENU BACKWARDS on PRESS OF CENTER BUTTON
   changeMenuBackward = () => {
 
     const navigationStack = this.state.navigationStack.slice();
@@ -198,8 +212,7 @@ class App extends React.Component {
 
   }
 
-
-
+  // FUNCTION FOR : CHANGE MENU FORWARD on PRESS OF CENTER BUTTON using NAVIGATION STACK
   changeMenuForward = (id, fromMenu) => {
 
     const navigationStack = this.state.navigationStack.slice();
@@ -253,12 +266,14 @@ class App extends React.Component {
 
   }
 
+  // FUNCTION FOR : SET NOTIFICATION AS FALSE AFTER SENDING NOTIFICATION
   setNoty=()=>{
     this.setState({noty:false});
     return;
   }
 
 
+  // FUNCTION FOR : RENDERING APP 
   render() {
     const { audio, active, currentMenu, menuItems, musicItems, songItems, playing, songIndex, theme, songUrl, songImgUrl, wheelColor, wallpaper, wallpaperItems, noty, notifyText } = this.state;
     return (

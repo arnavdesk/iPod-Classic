@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Themes.css"
 
+// Renders themes menu
 class Themes extends React.Component {
     render() {
         const {active} = this.props;

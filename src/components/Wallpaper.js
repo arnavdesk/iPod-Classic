@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Renders wallpaper menu
 class Wallpaper extends React.Component {
     render() {
         const {active} = this.props;

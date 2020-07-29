@@ -1,9 +1,11 @@
+/* container div */
 .now-playing-container{
     width: 270px;
     height: 190px;
     background-color: #E3F2FD;
 }
 
+/* Song details div */
 .song-details{
     display: flex;
     align-items: center;
@@ -12,17 +14,20 @@
     padding: 10px;
 }
 
+/* img in song details */
 .song-details img{
     margin: auto;
     width: 100px;
     height: 100px;
 }
 
+/* name of song */
 .song-details h1{
     margin: 0px;
     font-size: 20px;
 }
 
+/* playing or not */
 .status{
     margin-top: 20px;
     display: flex;
@@ -31,6 +36,7 @@
     width: 100%;
 }
 
+/* progress of song duration */
 #progress{
     width: 65%;
     height: 10px;
@@ -38,6 +44,7 @@
     background-color: gray;
 }
 
+/* progress bar filled */
 #progress-bar{
     height: 10px;
     background-color: green;

@@ -1,7 +1,9 @@
+/* make whole app flex */
 .App {
   display: flex;
 }
 
+/* lock icon in lockscreen */
 .lock-display{
   display: flex;
   justify-content: center;
@@ -13,6 +15,7 @@
   font-size: 100px;
 }
 
+/* Bottom div  lockscreen */
 .bottom-div-lock{
   width: 270px;
   height: 40px;

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Music.css"
 
+// Renders music menu
 class Music extends React.Component {
     render() {
         const {musicItems,active} = this.props;

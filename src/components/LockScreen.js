@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Renderse lockscreen
 class LockScreen extends React.Component {
     render() {
         return (

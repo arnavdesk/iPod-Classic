@@ -13,6 +13,7 @@ class Playing extends React.Component {
 
     }
 
+    // logic for updating the current music playbak
     componentDidMount() {
         const { audio } = this.props;
         this.setState({ currentTime: audio.currentTime });
@@ -21,10 +22,12 @@ class Playing extends React.Component {
         }, 100);
     }
 
+    // Clear interval for that same thing
     componentWillUnmount() {
         clearInterval(this.intervalId);
     }
 
+    // Render playing screen
     render() {
         const { songItems, playing, songIndex, audio, songImgUrl } = this.props;
         var currentTimeRender = Math.floor(this.state.currentTime / 60) + ":" + Math.floor(this.state.currentTime % 60);
@@ -39,7 +42,7 @@ class Playing extends React.Component {
         return (
             <div className="now-playing-container">
                 <div className="song-details">
-                    <img src={songImgUrl}></img>
+                    <img src={songImgUrl} alt="songImg"></img>
                     <div>
                         <h1>{songItems[songIndex]}</h1>
                         {playing && <h5 className="play-pause-nav">Playing</h5>}

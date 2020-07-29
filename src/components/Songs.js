@@ -1,6 +1,6 @@
 import React from 'react';
-import "../css/Songs.css"
 
+// Renders songs menu
 class Songs extends React.Component {
     render() {
         const {songItems,active} = this.props;
