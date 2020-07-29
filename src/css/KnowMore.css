@@ -1,0 +1,47 @@
+/* information leaf on top left */
+
+.information-container{
+    position: fixed;
+    top: -535px;
+    width: 300px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+    box-sizing: border-box;
+    height: max-content;
+    color: white;
+}
+
+
+.information-leaf{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+p{
+    margin: 5px;
+}
+
+.info-div{
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #1B5E20;
+    transition: all 0.3s ease-in-out;
+}
+
+#info-btn{
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #1B5E20;
+    padding: 2px 10px;
+}
+
+#info-btn:hover{
+    background-color: rgb(2, 68, 2);
+}

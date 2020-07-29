@@ -32,6 +32,7 @@
 .right-container-nav{
     display: flex;
     flex-direction: row;
+    margin-left: 15px;
 }
 
 /* play pause icon in right */

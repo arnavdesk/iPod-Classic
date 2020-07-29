@@ -19,10 +19,10 @@ class Menu extends React.Component {
                     </ul>
                 </div>
                 <div className="leaf">
-                    {active === 0 && <img className="leaf-img" src={songImgUrl}></img>}
-                    {active === 1 && <img className="leaf-img" src={music}></img>}
-                    {active === 2 && <img className="leaf-img" src={game}></img>}
-                    {active === 3 && <img className="leaf-img" src={settings}></img>}
+                    {active === 0 && <img className="leaf-img" src={songImgUrl} alt=""></img>}
+                    {active === 1 && <img className="leaf-img" src={music} alt=""></img>}
+                    {active === 2 && <img className="leaf-img" src={game} alt=""></img>}
+                    {active === 3 && <img className="leaf-img" src={settings} alt=""></img>}
                 </div>
             </div>
         )

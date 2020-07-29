@@ -9,7 +9,7 @@ class WheelColor extends React.Component {
             <div className="music">
                 <h2>Wheel Color Select</h2>
                 <ul>
-                    {["Black","White","Dark Grey","Purple"].map((element,index)=>{
+                    {["Black","White","Brown","Purple"].map((element,index)=>{
                         return active===index?<li key={index} className="active theme-li">{element}</li>:<li className="theme-li" key={index}>{element} </li>
                     })}
                 </ul>

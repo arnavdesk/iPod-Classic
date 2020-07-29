@@ -4,6 +4,7 @@ import React from 'react';
 import '../css/App.css';
 // Import iPod body file
 import Case from './Case.js';
+import KnowMore from "./KnowMore.js"
 // Import songs
 import song2 from "../static/songs/Laung Gwacha.mp3"
 import song1 from "../static/songs/Shape of you.mp3"
@@ -68,7 +69,10 @@ class App extends React.Component {
       });
     } else if (e.detail.interval > 250 && e.detail.interval < 10000) {
       const interval = e.detail.interval / 100;
-      this.state.audio.currentTime += interval;
+      this.setState((prevState)=>{
+        prevState.audio.currentTime += interval;  
+        return prevState;
+      })
     }
   }
 
@@ -96,7 +100,10 @@ class App extends React.Component {
       });
     } else if (e.detail.interval > 250 && e.detail.interval < 10000) {
       const interval = e.detail.interval / 100;
-      this.state.audio.currentTime -= interval;
+      this.setState((prevState)=>{
+        prevState.audio.currentTime -= interval;  
+        return prevState;
+      })
     }
   }
 
@@ -167,12 +174,12 @@ class App extends React.Component {
   setWheelColor = (id) => {
     let wheelColor ="";
     if (id === 0) {
-      wheelColor= "Black";
+      wheelColor= "#212121";
     }
     else if (id === 1) {
       wheelColor= "white";
     } else if (id === 2) {
-      wheelColor = "#616161";
+      wheelColor = "#3E2723";
     } else if (id === 3) {
       wheelColor= "#3D5AFE";
     }
@@ -278,6 +285,7 @@ class App extends React.Component {
     const { audio, active, currentMenu, menuItems, musicItems, songItems, playing, songIndex, theme, songUrl, songImgUrl, wheelColor, wallpaper, wallpaperItems, noty, notifyText } = this.state;
     return (
       <div className="App">
+        <KnowMore/>
         <Case songIndex={songIndex} active={active} menuItems={menuItems} musicItems={musicItems} currentMenu={currentMenu} changeMenuForward={this.changeMenuForward} changeMenuBackward={this.changeMenuBackward} updateActiveMenu={this.updateActiveMenu} togglePlayPause={this.togglePlayPause} songItems={songItems} playing={playing} theme={theme} audio={audio} songUrl={songUrl} songImgUrl={songImgUrl} seekSongForward={this.seekSongForward} seekSongReverse={this.seekSongReverse} wheelColor={wheelColor} wallpaper={wallpaper} wallpaperItems={wallpaperItems} noty={noty} setNoty={this.setNoty} notifyText={notifyText}/>
       </div>
     );
