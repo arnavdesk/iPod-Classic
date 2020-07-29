@@ -1,7 +1,9 @@
 .bar{
+    margin-top: -1px;
     display: flex;
     width: 270px;
     height: 20px;
+    min-height: 20px;
     background-color: #E3F2FD;
     border-bottom: 1px solid black;
 }
@@ -34,4 +36,11 @@
     padding: 0px;
     text-align: center;
     color: #039BE5;
+}
+
+.notification{
+    margin: 1px;
+    margin:auto;
+    padding: 0px;
+    text-align: center;
 }

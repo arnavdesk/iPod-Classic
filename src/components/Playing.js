@@ -27,9 +27,15 @@ class Playing extends React.Component {
 
     render() {
         const { songItems, playing, songIndex, audio, songImgUrl } = this.props;
-        const currentTimeRender = Math.floor(this.state.currentTime / 60) + ":" + Math.floor(this.state.currentTime % 60);
-        const durationRender = Math.floor(audio.duration / 60) + ":" + Math.floor(audio.duration % 60);
-        const percentageComplete = { width: (audio.currentTime / audio.duration * 100) + "%" };
+        var currentTimeRender = Math.floor(this.state.currentTime / 60) + ":" + Math.floor(this.state.currentTime % 60);
+        var durationRender = Math.floor(audio.duration / 60) + ":" + Math.floor(audio.duration % 60);
+        const percentageComplete = { width: (this.state.currentTime / audio.duration * 100) + "%" };
+        if(durationRender==="NaN:NaN"){
+            durationRender="0:00";
+        }
+        if(Math.floor(this.state.currentTime%60<10)){
+            currentTimeRender = Math.floor(this.state.currentTime / 60) + ":0" + Math.floor(this.state.currentTime % 60);
+        }
         return (
             <div className="now-playing-container">
                 <div className="song-details">

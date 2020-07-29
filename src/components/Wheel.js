@@ -7,7 +7,7 @@ class Wheel extends React.Component {
         this.angle = 0;
     }
     render() {
-        const { changeMenu, active, currentMenu, theme,wheelColor } = this.props;
+        const { changeMenuForward, active, currentMenu, theme,wheelColor } = this.props;
         return (
             <div className="wheel-container" id="wheel-container">
                 <div style={{backgroundColor:wheelColor}} className="wheel" id="wheel" >
@@ -28,7 +28,7 @@ class Wheel extends React.Component {
                     </div>
                 </div>
 
-                <div style={{backgroundColor:theme}} className="blank" id="blank" onClick={() => { changeMenu(active, currentMenu) }}></div>
+                <div style={{backgroundColor:theme}} className="blank" id="blank" onClick={() => { changeMenuForward(active, currentMenu) }}></div>
             </div>
         )
     }
@@ -65,7 +65,7 @@ class Wheel extends React.Component {
     }
 
     componentDidMount() {
-        const { changeMenu ,togglePlayPause, seekSongForward, seekSongReverse} = this.props;
+        const { changeMenuBackward ,togglePlayPause, seekSongForward, seekSongReverse} = this.props;
         const wheelControll = this.wheelControll;
         const wheel = document.getElementById("wheel");
         const activeRegion = ZingTouch.Region(wheel);
@@ -81,7 +81,7 @@ class Wheel extends React.Component {
         })
 
         activeRegion.bind(menuIcon, 'tap', function (e) {
-            changeMenu(-1, -1);
+            changeMenuBackward();
         });
         activeRegion.bind(wheel, 'rotate', function (e) {
             wheelControll(e);
