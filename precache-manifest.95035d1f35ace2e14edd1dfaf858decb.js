@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e8efc3aeb1ea29d80f47f4569980a9e",
+    "revision": "7665c0ce994a4a4447ee4b834b28b082",
     "url": "/iPod-Classic/index.html"
   },
   {
-    "revision": "77b98dfb69c567f6dc04",
-    "url": "/iPod-Classic/static/css/main.072c5da5.chunk.css"
+    "revision": "a9280670de9a56b196fc",
+    "url": "/iPod-Classic/static/css/main.d30d2164.chunk.css"
   },
   {
     "revision": "6096c8d73ef8def1d99b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iPod-Classic/static/js/2.516d8d8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "77b98dfb69c567f6dc04",
-    "url": "/iPod-Classic/static/js/main.1540f451.chunk.js"
+    "revision": "a9280670de9a56b196fc",
+    "url": "/iPod-Classic/static/js/main.6dc42eb8.chunk.js"
   },
   {
     "revision": "4deacc06a44225f75abb",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec42ead05165b16b9d0c011d0966c4c2",
     "url": "/iPod-Classic/static/media/game.ec42ead0.jpg"
-  },
-  {
-    "revision": "48a8ec7b38b6be9f32e075b4b5d9b18d",
-    "url": "/iPod-Classic/static/media/ipod.48a8ec7b.jpg"
   },
   {
     "revision": "494ed9c0922a3ee87ef2569f5b29d8fe",
