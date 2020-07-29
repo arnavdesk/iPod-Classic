@@ -48,7 +48,7 @@ npm start or react-scripts start
 
 ## Directory Structure
 
-`/src` - all code files
-`/src/components` - all react components
-`/src/css` - all css files
-`/src/statuc` - all static files
+`/src` - all code files <br>
+`/src/components` - all react components <br>
+`/src/css` - all css files <br>
+`/src/statuc` - all static files <br>
