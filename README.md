@@ -1,36 +1,6 @@
 # iPod-Classic
 ## View this app at: https://arnavdesk.github.io/iPod-Classic/
 
-### Lock Screen
-<img src="/assets/lock.png"></img>
-
-### Menu
-<img src="/assets/menu.png"></img>
-
-### Now Playing
-<img src="/assets/playing.png"></img>
-
-### Themes
-<img src="/assets/theme.png"></img>
-
-### Different theme and wallpaper applied
-<img src="/assets/themewall.png"></img>
-
-## How To Install.
-
-0. Run this app by directly opening the above link or follow steps below to set up on local directory.
-1. Clone this project
-2. Start by installing npm if you don't have it already.
-3. Navigate to Project Directory by :
-```
-cd iPod-Classic
-```
-4. run following commands :
-```
-npm install 
-npm start or react-scripts start
-```
-
 ## Basic Features.
 
 1. Looks like an amazing classic device we all used to adore.
@@ -52,9 +22,35 @@ npm start or react-scripts start
 6. To go to next menu or go inside a menu press center button and to go to previous menu press menu button
 7. Songs do play and Please checkout settings menu
 
+# Preview 
+
+### Lock Screen and Main Menu
+<img src="/assets/lock.png" width="380px" height="550px"> <img src="/assets/menu.png" width="390px" height="550px"></img>
+
+### Now Playing and Themes
+<img src="/assets/playing.png" width="400px" height="550px"></img> <img src="/assets/theme.png" width="390px" height="550px"></img>
+
+### Different theme and wallpaper applied
+<img src="/assets/themewall.png" width="360px" height="550px"></img>
+
+## How To Install.
+
+0. Run this app by directly opening the above link or follow steps below to set up on local directory.
+1. Clone this project
+2. Start by installing npm if you don't have it already.
+3. Navigate to Project Directory by :
+```
+cd iPod-Classic
+```
+4. run following commands :
+```
+npm install 
+npm start or react-scripts start
+```
+
 ## Directory Structure
 
-`/src` - all code files
-`/src/components` - all react components
-`/src/css` - all css files
-`/src/statuc` - all static files
+`/src` - all code files <br>
+`/src/components` - all react components <br>
+`/src/css` - all css files <br>
+`/src/statuc` - all static files <br>
