@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/iPod-Classic/static/css/main.2a9d0f93.chunk.css",
-    "main.js": "/iPod-Classic/static/js/main.e1f878de.chunk.js",
-    "main.js.map": "/iPod-Classic/static/js/main.e1f878de.chunk.js.map",
+    "main.css": "/iPod-Classic/static/css/main.e5efb77e.chunk.css",
+    "main.js": "/iPod-Classic/static/js/main.8f45a34c.chunk.js",
+    "main.js.map": "/iPod-Classic/static/js/main.8f45a34c.chunk.js.map",
     "runtime-main.js": "/iPod-Classic/static/js/runtime-main.6904ec8c.js",
     "runtime-main.js.map": "/iPod-Classic/static/js/runtime-main.6904ec8c.js.map",
     "static/js/2.58426c1f.chunk.js": "/iPod-Classic/static/js/2.58426c1f.chunk.js",
     "static/js/2.58426c1f.chunk.js.map": "/iPod-Classic/static/js/2.58426c1f.chunk.js.map",
     "index.html": "/iPod-Classic/index.html",
-    "precache-manifest.bed54c457615aef8b092bbbce28def65.js": "/iPod-Classic/precache-manifest.bed54c457615aef8b092bbbce28def65.js",
+    "precache-manifest.5b890a5a08ddceab7cf9b1480fe13686.js": "/iPod-Classic/precache-manifest.5b890a5a08ddceab7cf9b1480fe13686.js",
     "service-worker.js": "/iPod-Classic/service-worker.js",
-    "static/css/main.2a9d0f93.chunk.css.map": "/iPod-Classic/static/css/main.2a9d0f93.chunk.css.map",
+    "static/css/main.e5efb77e.chunk.css.map": "/iPod-Classic/static/css/main.e5efb77e.chunk.css.map",
     "static/js/2.58426c1f.chunk.js.LICENSE.txt": "/iPod-Classic/static/js/2.58426c1f.chunk.js.LICENSE.txt",
     "static/media/Laung Gwacha.mp3": "/iPod-Classic/static/media/Laung Gwacha.f58a59fa.mp3",
     "static/media/Let Me Love You.mp3": "/iPod-Classic/static/media/Let Me Love You.13b23bf9.mp3",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.6904ec8c.js",
     "static/js/2.58426c1f.chunk.js",
-    "static/css/main.2a9d0f93.chunk.css",
-    "static/js/main.e1f878de.chunk.js"
+    "static/css/main.e5efb77e.chunk.css",
+    "static/js/main.8f45a34c.chunk.js"
   ]
 }
