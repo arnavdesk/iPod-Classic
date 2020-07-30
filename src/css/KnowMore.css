@@ -6,7 +6,7 @@
     width: 300px;
     z-index: 2;
     transition: all 0.3s ease-in-out;
-    padding: 5px;
+    /* padding: 5px; */
     box-sizing: border-box;
     height: max-content;
     color: white;
@@ -21,7 +21,7 @@
 }
 
 p{
-    margin: 5px;
+    margin: 5px;;
 }
 
 .info-div{
@@ -40,6 +40,7 @@ p{
     color: white;
     background-color: #1B5E20;
     padding: 2px 10px;
+    box-sizing: border-box;
 }
 
 #info-btn:hover{
