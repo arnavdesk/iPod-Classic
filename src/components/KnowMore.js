@@ -20,7 +20,7 @@ class KnowMore extends React.Component {
         const {divOpen} = this.state;
         let cssProp;
         if(divOpen===false){
-            cssProp ={top:"-535px"};
+            cssProp ={top:"-542px"};
         }
         else{
             cssProp ={top:"0px"};
