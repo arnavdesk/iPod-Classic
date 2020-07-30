@@ -8,9 +8,11 @@ import KnowMore from "./KnowMore.js"
 // Import songs
 import song2 from "../static/songs/Laung Gwacha.mp3"
 import song1 from "../static/songs/Shape of you.mp3"
+import song3 from "../static/songs/Let Me Love You.mp3"
 // Import song cover images
 import song2Img from "../static/laung_gwacha.jpg";
 import song1Img from "../static/shape_of_you.png";
+import song3Img from "../static/let_me.jpg";
 // Import wallpapers
 import jupiterWallpaper from "../static/jupiter.png"
 import earthWallpaper from "../static/earth.jpg"
@@ -25,13 +27,13 @@ class App extends React.Component {
       active: 0,  //Active list item
       menuItems: ["Now Playing", "Music", "Games", "Settings"], //menu Items
       musicItems: ["All Songs", "Artist", "Albums"], //Items in music
-      songItemsUrl: [song1, song2],  //songs list
-      songImgItemsUrl: [song1Img, song2Img],  //song images list
+      songItemsUrl: [song1, song2, song3],  //songs list
+      songImgItemsUrl: [song1Img, song2Img, song3Img],  //song images list
       wallpaperItems: [earthWallpaper, jupiterWallpaper, moonWallpaper], //wallpapers
-      songItems: ["Shape of You", "Laung Gwacha"], //song names
+      songItems: ["Shape of You", "Laung Gwacha", "Let Me Love You"], //song names
       songIndex: 0, //current song
-      lengthMenuKey: { "-1": 3, 1: 2, 4: 1, 8: 4, 3: 2, 9: 3 ,10:2},  //length of a particular menu
-      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8, 9, 10] }, //which menu can be rendered by this menu
+      lengthMenuKey: { "-1": 3, 1: 2, 4: 2, 8: 4, 3: 2, 9: 3 ,10:2},  //length of a particular menu
+      menuMapping: { "-1": [0, 1, 2, 3], 1: [4, 5, 6], 3: [8, 9, 10] }, //which menu can be rendered by key menu
       currentMenu: -2, //current menu which is lockscreen initially
       navigationStack: [], //Used for navigation forward and backward
       songUrl: song1, //current song url
