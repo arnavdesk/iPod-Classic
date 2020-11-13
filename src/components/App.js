@@ -4,7 +4,7 @@ import React from 'react';
 import '../css/App.css';
 // Import iPod body file
 import Case from './Case.js';
-import KnowMore from "./KnowMore.js"
+// import KnowMore from "./KnowMore.js"
 // Import songs
 import song2 from "../static/songs/Laung Gwacha.mp3"
 import song1 from "../static/songs/Shape of you.mp3"
@@ -287,7 +287,7 @@ class App extends React.Component {
     const { audio, active, currentMenu, menuItems, musicItems, songItems, playing, songIndex, theme, songUrl, songImgUrl, wheelColor, wallpaper, wallpaperItems, noty, notifyText } = this.state;
     return (
       <div className="App">
-        <KnowMore/>
+        {/* <KnowMore/> @TODO:Uncomment */}
         <Case songIndex={songIndex} active={active} menuItems={menuItems} musicItems={musicItems} currentMenu={currentMenu} changeMenuForward={this.changeMenuForward} changeMenuBackward={this.changeMenuBackward} updateActiveMenu={this.updateActiveMenu} togglePlayPause={this.togglePlayPause} songItems={songItems} playing={playing} theme={theme} audio={audio} songUrl={songUrl} songImgUrl={songImgUrl} seekSongForward={this.seekSongForward} seekSongReverse={this.seekSongReverse} wheelColor={wheelColor} wallpaper={wallpaper} wallpaperItems={wallpaperItems} noty={noty} setNoty={this.setNoty} notifyText={notifyText}/>
       </div>
     );
