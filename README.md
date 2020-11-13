@@ -12,7 +12,7 @@
 7. Songs and images only for personal use, a big credit to font-awesome and flat-icons.
 8. Please contact me for any concerns. 
 
-## How to Use/Controll?
+## How to Use/Control?
 
 1. To unlock screen you have to press center button and to lock screen you have to press menu button in main menu.
 2. To play and pause music in any menu you need to press play/pause button on bottom. 
